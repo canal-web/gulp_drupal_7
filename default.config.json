@@ -19,8 +19,8 @@
   "img": {
     "input": "images\/**\/*.*",
     "output": ".\/build\/img",
-    "str_needle": "images",
-    "str_replace": "build/img",
+    "str_needle": "images/",
+    "str_replace": "build/img/",
     "options": {
       "optimizationLevel": 3,
       "progressive": true,
