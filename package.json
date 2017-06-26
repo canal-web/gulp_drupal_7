@@ -15,6 +15,7 @@
     "gulp-stylelint-console-reporter": "0.1.0",
     "gulp-replace": "^0.5.4",
     "gulp-if": "^2.0.1",
+    "gulp-concat": "^2.6.x",
     "gulp-uglify": "1.5.1",
     "yargs": "^6.0.0",
     "stylelint-config-axelerant": "0.1.5",

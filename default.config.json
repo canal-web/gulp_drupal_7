@@ -14,7 +14,8 @@
   },
   "js": {
     "input": "js\/**\/*.js",
-    "output": ".\/build"
+    "output": ".\/build",
+    "outputFile": "global.js"
   },
   "img": {
     "input": "images\/**\/*.*",

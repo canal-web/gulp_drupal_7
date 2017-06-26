@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
+var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
@@ -27,10 +28,10 @@ gulp.task('sass', function() {
   .pipe(gulpif(isDev,reload({stream: true})));
 });
 
-
 gulp.task('js', function() {
   return gulp.src([config.js.input])
   .pipe(sourcemaps.init())
+  .pipe(concat(gulp.dest(config.js.outputFile)))
   .pipe(gulpif(isProduction,uglify()))
   .pipe(gulp.dest(config.js.output))
   .pipe(gulpif(isDev,reload({stream: true})));
