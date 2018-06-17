@@ -31,7 +31,7 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
   return gulp.src([config.js.input])
   .pipe(sourcemaps.init())
-  .pipe(concat(gulp.dest(config.js.outputFile)))
+  .pipe(concat(config.js.outputFile))
   .pipe(gulpif(isProduction,uglify()))
   .pipe(gulp.dest(config.js.output))
   .pipe(gulpif(isDev,reload({stream: true})));
